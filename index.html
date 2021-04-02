@@ -21,6 +21,18 @@ function draw() {
     ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.arc(50, 50, 10, 0, Math.PI*2, false);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.arc(150, 150, 10, 0, Math.PI*2, false);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.closePath();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 setInterval(draw, 1000);
 </script>
