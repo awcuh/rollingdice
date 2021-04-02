@@ -14,13 +14,16 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-function draw() {
+function draw0() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.arc(100, 100, 10, 0, Math.PI*2, false);
     ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
+}
+function draw1() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.arc(50, 50, 10, 0, Math.PI*2, false);
     ctx.fillStyle = "black";
@@ -31,9 +34,11 @@ function draw() {
     ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
-setInterval(draw, 1000);
+setInterval(roll () {
+    draw0();
+    draw1();
+}, 1000);
 </script>
 </body>
 </html>
