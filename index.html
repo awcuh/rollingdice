@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta ="utf-8" />
+    <title>Rolling Dice</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        canvas { background: #ffffff; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="200"></canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+function one() = {
+    ctx.beginPath();
+    ctx.arc(100, 100, 10, 0, Math.PI*2, false);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.closePath();
+}
+
+one()
+</style>
+</body>
+</html>
+    
+
